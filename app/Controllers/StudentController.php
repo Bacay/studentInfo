@@ -12,7 +12,7 @@ class StudentController extends BaseController
     }
     public function sherwinski()
     {
-        return view('students');
+        return view('student');
     }
     public function index()
     {
