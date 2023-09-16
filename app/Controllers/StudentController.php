@@ -37,7 +37,7 @@ class StudentController extends BaseController
             'sex'=>$this->request->getVar('sex'),
             'studentId'=>$this->request->getVar('studentId'),
             ];
-        if($id != null){
+        if($id!= null){
             $this->student->set($data)->where('id', $id)->update();
         }else{
             $this->student->save($data);
